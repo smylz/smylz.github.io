@@ -111,7 +111,8 @@
                 <div class="right-content">
                   <span>our solid background</span>
                   <h2>Get to know about <em>our company</em></h2>
-                  <p align= "justify">BROMPTON SOLICITORS was established in 2019 by Ekwy Ogbu. The Firm has developed an enviable
+                  <p align="justify">BROMPTON SOLICITORS was established in 2019 by Ekwy Ogbu. The Firm has developed an
+                    enviable
                     portfolio of clients and
                     broad experience in National and International legal services and transactions. The Firm’s
                     experience spans commercial
@@ -149,33 +150,75 @@
             <!-- <span>Suspendisse a ante in neque iaculis lacinia</span> -->
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="team-item">
-            <img src="assets/images/team_02.jpg" alt="">
+            <img src="assets/images/Ekwy.jpeg" height="450px" , width="100%" alt="">
             <div class="down-content">
               <h4>Ekwy Ogbu</h4>
               <span>Founder</span>
-              <p align= "justify">Ekwy is a qualified lawyer with years of experience in corporate law, company secretarial services and renewable energy.
-              She has served as legal adviser in Stormberg power Limited, Lasocho Consult amongst others.</p>
+              <p align="justify">Ekwy is a qualified lawyer with years of experience in corporate law, company
+                secretarial services and renewable energy.
+                She has served as legal adviser in Stormberg power Limited, Lasocho Consult amongst others.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="team-item">
-            <img src="assets/images/team_01.jpg" alt="">
+            <img src="assets/images/Rotimi.jpeg" height="450px" , width="100%" alt="">
             <div class="down-content">
               <h4>Rotimi Oke</h4>
               <span>Co-Founder</span>
-              <p align= "justify">Rotimi is a qualified lawyer with practical experience in corporate law, projest finance, and energy
+              <p align="justify">Rotimi is a qualified lawyer with practical experience in corporate law, projest
+                finance, and energy
                 finance. He has a MAsters degree in International Business from the prestigious Grenoble Graduate School
                 of Business, France. He also holds a certificate of learning in Petroleum Economics, Advanced Rate
                 Setting and Subsidy Design Strategies for Utilities, and Renewable Energy Management and Finance.
-                <br><br> He began his career with Templers before a productive stint in the Syndicationa and
+              <p id="dots1"></p>
+              <p id="more1">
+
+                He began his career with Templers before a productive stint in the Syndicationa and
                 Co-financing department of the African Development Bank. He continued his investment banking and
                 infrastructure finance career with Africapital MAnagement Limited as a Senior Investment Analyst and
                 Legal Adviser. He gained management experience as he oversaw the management of two start-ups operating
                 in the IT and renewable energy spaces before his appointment as a Special Assistant to the President of
                 the Senate on Legal and Commercial Matters in 2015.</p>
+              </p>
+              <button onclick="myFunction1()" id="myBtn1">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-item">
+            <img src="assets/images/Mr Christopher.jpeg" height="450px" , width="100%" alt="">
+            <div class="down-content">
+              <h4>CHRISTOPHER OSEJIE OKOUGHA ACIArb. (UK)</h4>
+              <span>Partner</span>
+              <p align="justify">
+                Accountability and professionalism are two attributes that form part of Chris’ principles. His flair for
+                the advocacy of
+                law is what propels him in everyday legal practice and procedures. He has been involved in some high
+                profile cases and
+                continues to strive to be an outstanding lawyer. His research and drafting skills are his strongest
+                points.
+              <p id="dots"></p>
+              <p id="more">
+
+                He studied at University of Benin (LL.B Hons., 2012), Nigerian Law School (B.L, 2013) with Practice
+                areas in:
+                <br>
+                -Litigation <br>
+                -Corporate & Commercial Law <br>
+                -Oil and Gas Law <br>
+                -Property Law <br>
+                -Election Petition <br>
+                - Debt recovery <br>
+                - Maritime law <br>
+                <br>
+                PROFESSIONAL ASSOCIATIONS<br>
+                -Nigerian Bar Association <br>
+                -Chartered Institute of Arbitrators (UK) </p>
+              </p>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
             </div>
           </div>
         </div>
@@ -264,7 +307,8 @@
               <div class="inner-content">
                 <h4>Mr. A</h4>
                 <span>CEO Google</span>
-                <p align= "justify">"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo
+                <p align="justify">"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet
+                  malesuada justo
                   sem
                   sit amet quam. Pellentesque in sagittis lacus."</p>
               </div>
@@ -296,7 +340,7 @@
                 <h4>Mr. D </h4>
                 <span>Marketing Head</span>
                 <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis
-                  quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                  quis libero. Quisque vulputate lacinia nisl ac lobortis..."</p>
               </div>
               <!-- <img src="assets/images/engineer-4915445_960_720.jpg" alt=""> -->
             </div>
@@ -407,6 +451,40 @@
         cleared[t.id] = 1;  // you could use true and false, but that's more typing
         t.value = '';         // with more chance of typos
         t.style.color = '#fff';
+      }
+    }
+  </script>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+  <script>
+    function myFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
       }
     }
   </script>
