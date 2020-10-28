@@ -96,7 +96,12 @@ a.border-button:hover {
   color: #666;
   letter-spacing: 1px;
 }
-
+#more {
+  display: none;
+}
+#more1 {
+  display: none;
+}
 #preloader {
   overflow: hidden;
   background: #a4c639;
